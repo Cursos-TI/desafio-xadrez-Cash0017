@@ -4,11 +4,12 @@ int main(){
 int i, numero;
 
 do{
-printf("escolha quais peças deseja movimentar:");
+printf("escolha quais peças deseja movimentar: \n");
 printf("1. BISPO \n");
 printf("2. TORRE \n");
 printf("3. RAINHA \n");
-printf("4. SAIR... \n");
+printf("4. CAVALO \n");
+printf("5. SAIR... \n");
 printf("digite a opção:");
 scanf("%d", &numero);
 
@@ -39,14 +40,23 @@ for(int i = 1; i <= 5; i++){
     
     break;
 case 4: 
+          printf("movimento do CAVALO: \n");
+    for(int i = 1; i <= 5; i++){
+     printf("movendo verticalmante - casa %d\n", i);   
+        for(int j = 1; j <= 1; j++){
+             printf("movendo horizontalmente - casa %d\n", i);  
+        }
+    }
+
+    break;
+case 5: 
     printf("saindo... \n");
     break;
-
 default:
     printf("opção invalida \n");
 
 }
-}while (numero != 4);
+}while (numero != 5);
 
 
 
