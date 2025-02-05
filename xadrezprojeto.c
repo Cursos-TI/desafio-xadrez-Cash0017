@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(){
 
 int i, numero;
@@ -40,14 +41,15 @@ for(int i = 1; i <= 5; i++){
     
     break;
 case 4: 
-          printf("movimento do CAVALO: \n");
-    for(int i = 1; i <= 5; i++){
-     printf("movendo verticalmante - casa %d\n", i);   
-        for(int j = 1; j <= 1; j++){
-             printf("movendo horizontalmente - casa %d\n", i);  
-        }
-    }
+           printf("movimento do CAVALO \n");
+for(int i = 1; i <= 5; i++){
+    printf("movendo verticalmente - casa %d\n", i);
+}if(i = 5){
 
+for(int j = 1; j <= 5; j++){
+    printf("movendo horizontalmente - casa %d\n", j);
+   }
+}
     break;
 case 5: 
     printf("saindo... \n");
