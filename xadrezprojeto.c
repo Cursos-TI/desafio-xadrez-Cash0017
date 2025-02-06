@@ -1,13 +1,6 @@
 #include <stdio.h>
 
-void moverbispo(int casas, int passo) {
-    if (casas <= 0) {
-        return;
-    }
 
-    printf("Movimento do Bispo: Diagonal Superior Direita, Casa %d\n", passo);
-    moverbispo(casas - 1, passo + 1);  
-}
 
 void movertorre(int casas, int passo){
     if(casas <= 0){
@@ -39,8 +32,15 @@ scanf("%d", &numero);
 switch (numero)
 {
 case 1:
-      printf("Movimentação do Bispo:\n");
-    moverbispo(movimentobispo, 1); 
+      printf("movimento da TORRE \n");
+     for(int i = 1; i <= 5; i++){
+        printf("movendo horizontalmente - casa %d\n", j);
+     }if(i = 5){
+        for(int j = 1; j <= 5; j++){
+        printf("movendo verticalmente - casa %d\n", j);
+        }
+    }
+
     break;
 case 2:
          printf("movimento da TORRE \n");
