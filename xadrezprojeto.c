@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+void moverrainha(int casas, int passo){
+    if(casas <= 0){
+        return;
+    }
+  printf("movendo para direita - casa %d\n", passo);
+  moverrainha(casas - 1, passo + 1);
+
+}
 
 
 void movertorre(int casas, int passo){
@@ -15,8 +23,8 @@ void movertorre(int casas, int passo){
 int main(){
 
 int i, numero;
-int movimentobispo = 5;
 int movimentotorre = 5;
+int movimentorainha = 8;
 
 do{
 printf("escolha qual peça deseja movimentar: \n");
@@ -32,9 +40,9 @@ scanf("%d", &numero);
 switch (numero)
 {
 case 1:
-      printf("movimento da TORRE \n");
+      printf("movimento da BISPO \n");
      for(int i = 1; i <= 5; i++){
-        printf("movendo horizontalmente - casa %d\n", j);
+        printf("movendo horizontalmente - casa %d\n", i);
      }if(i = 5){
         for(int j = 1; j <= 5; j++){
         printf("movendo verticalmente - casa %d\n", j);
@@ -48,11 +56,9 @@ case 2:
 
     break;
 case 3:
-           printf("movimento da RAINHA: \n");
-for(int i = 1; i <= 5; i++){
-    printf("movendo para esquerda - casa %d\n", i);
-}
-    
+       printf("movimento da RAINHA \n");
+    moverrainha(movimentorainha, 1);
+
     break;
 case 4: 
            printf("movimento do CAVALO \n");
