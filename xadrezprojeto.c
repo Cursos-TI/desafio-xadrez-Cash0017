@@ -22,7 +22,7 @@ void movertorre(int casas, int passo){
 
 int main(){
 
-int i, numero;
+int i = 1, j = 1, numero;
 int movimentotorre = 5;
 int movimentorainha = 8;
 
@@ -40,14 +40,16 @@ scanf("%d", &numero);
 switch (numero)
 {
 case 1:
-      printf("movimento da BISPO \n");
-     for(int i = 1; i <= 5; i++){
-        printf("movendo horizontalmente - casa %d\n", i);
-     }if(i = 5){
-        for(int j = 1; j <= 5; j++){
-        printf("movendo verticalmente - casa %d\n", j);
-        }
-    }
+       
+             printf("movimento do BISPO \n");
+for(int i = 1; i <= 5; i++){
+    printf("movendo para cima - casa %d\n", i);
+} if(i = 5){
+
+for(int j = 1; j <= 5; j++){
+    printf("movendo para direita - casa %d\n", j);
+   }
+}
 
     break;
 case 2:
@@ -63,8 +65,8 @@ case 3:
 case 4: 
            printf("movimento do CAVALO \n");
 for(int i = 1; i <= 5; i++){
-    printf("movendo verticalmente - casa %d\n", i);
-}if(i = 5){
+    printf("movendo para cima - casa %d\n", i);
+}printf("\n"); if(i = 5){
 
 for(int j = 1; j <= 5; j++){
     printf("movendo horizontalmente - casa %d\n", j);
